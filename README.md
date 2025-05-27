@@ -13,6 +13,9 @@ We are working hard on the following items.
 - [ ] Release checkpoints 
 - [ ] Release datasets
 
+## 📁 Datasets
+### 1. Preprocessing 
+
 ## 🚀 Quick Start
 
 ### 1. Installation of base reqiurements
@@ -26,14 +29,15 @@ We are working hard on the following items.
 |      Model       |                                                               Download                                                                | |
 |:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
 | CLIP-pretrained | [Google Drive]() |⬜|
-| SJEDD model    | [Google Drive]() |⬜|
+| SJEDD model (FF++)    | [Google Drive]() |⬜|
+| SJEDD model (FFSC)    | [Google Drive]() |⬜|
 
 After downloading these checkpoints, put them into the folder ``pretrained``.
 
 ### 3. Inference on the test sets
 
 ```
-CUDA_VISIBLE_DEVICES=6 python SJEDD_test.py --auc --eval --opts ABLATION.LOSS antonym_prompts --dataset [dataset name, e.g., CDF] --batch_size 1 --n_frames 64 --test_log [path to test log file, e.g., ./output/test_log/CDF.txt] --resume [path to checkpoints, e.g., ./pretrained/ckpt_best.pth]
+CUDA_VISIBLE_DEVICES=5 python SJEDD_test.py --auc --test_log True --dataset CDF --batch_size 1 --n_frames 64 --resume [path to checkpoints, e.g., ./pretrained/ckpt_best.pth]
 ```
 
 
