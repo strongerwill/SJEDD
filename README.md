@@ -9,7 +9,7 @@ We are working hard on the following items.
 
 - [x] Release [arXiv paper](https://arxiv.org/abs/2408.16305)
 - [ ] Release training codes
-- [ ] Release inference codes
+- [x] Release inference codes
 - [ ] Release checkpoints 
 - [ ] Release datasets
 
