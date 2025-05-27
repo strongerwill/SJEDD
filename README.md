@@ -10,10 +10,11 @@ We are working hard on the following items.
 - [x] Release [arXiv paper](https://arxiv.org/abs/2408.16305)
 - [ ] Release training codes
 - [x] Release inference codes
-- [ ] Release checkpoints 
+- [x] Release checkpoints 
 - [ ] Release datasets
 
 ## 📁 Datasets
+Follow the links below to download the datasets (you will be asked to fill out some forms before downloading):
 ### 1. Preprocessing 
 
 ## 🚀 Quick Start
@@ -26,17 +27,17 @@ We are working hard on the following items.
 
 ### 2. Download the pretrained model and our model
 
-|      Model       |                                                               Download                                                                | |
-|:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
-| SJEDD model (FF++)    | [Google Drive]() |⬜|
-| SJEDD model (FFSC)    | [Google Drive]() |⬜|
+|      Model       |    Training Dataset   |                                                        Download                                                                | |
+|:----------------:|:----------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
+| SJEDD-FF++ | [FF++](https://github.com/ondyari/FaceForensics)  | [Google Drive](https://drive.google.com/file/d/1iXDzFrH4o3h4C7HA2jZRoxoxFr3G2Vly/view?usp=sharing) |✅|
+| SJEDD-FFSC | [FFSC](https://github.com/MZMMSEC/SO-DFD)  | [Google Drive]() |⬜|
 
 After downloading these checkpoints, put them into the folder ``pretrained``.
 
 ### 3. Inference on the test sets
 
 ```
-CUDA_VISIBLE_DEVICES=5 python SJEDD_test.py --auc --test_log True --dataset CDF --batch_size 1 --n_frames 64 --resume [path to checkpoints, e.g., ./pretrained/ckpt_best.pth]
+CUDA_VISIBLE_DEVICES=5 python SJEDD_test.py --auc --test_log True --dataset [e.g., CDF, FSh, Deeper, DFDC, FFSC] --batch_size 1 --n_frames 64 --resume [path to checkpoints, e.g., ./pretrained/ckpt_best.pth]
 ```
 
 
