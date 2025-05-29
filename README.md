@@ -14,8 +14,20 @@ We are working hard on the following items.
 - [ ] Release datasets
 
 ## 📁 Datasets
-Follow the links below to download the datasets (you will be asked to fill out some forms before downloading):
-### 1. Preprocessing 
+Follow the links below to download the datasets (🛡️ Copyright of the datasets belongs to their original providers, and you may be asked to fill out some forms before downloading):
+
+|  [FF++](https://github.com/ondyari/FaceForensics) | [CDF(v2)](https://github.com/yuezunli/celeb-deepfakeforensics)| [FSh](https://github.com/ondyari/FaceForensics/blob/master/dataset/FaceShifter/README.md) | [DF-1.0](https://github.com/EndlessSora/DeeperForensics-1.0/tree/master) | 
+|:-:|:-:|:-:|:-:|
+| [FFSC](https://github.com/MZMMSEC/SO-DFD) | [DiffusionFace (excluding the purely synthesized faces)](https://github.com/Rapisurazurite/DiffFace)| [DiFF (excluding the purely synthesized faces)](https://github.com/xaCheng1996/DiFF) |[DFDC (test set of the full version, not the Preview)](https://ai.meta.com/datasets/dfdc/) |
+
+**Note**: For FF++ and FFSC, please download the full dataset for both training and testing. For the other datasets, if a separate test set is explicitly provided, please download the test set. Otherwise, if no specific split is mentioned, download the full dataset.
+
+
+### 1. Preprocessing (Optional for video datasets)
+
+1) Extract the frames (e.g., using code in the [FaceForensics++ repo](https://github.com/ondyari/FaceForensics/blob/master/dataset/extract_compressed_videos.py).)
+
+2) Detect and crop the faces
 
 ## 🚀 Quick Start
 
