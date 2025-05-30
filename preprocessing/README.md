@@ -36,7 +36,7 @@ data
 
 ### 2. FaceShifter Dataset:
 ```
-CUDA_VISIBLE_DEVICES=7 python make_data_FSh.py --video_path data/FSh/c23/videos/ --save_path data/FSh/c23/faces/
+CUDA_VISIBLE_DEVICES=7 python make_data_FFpp_FSh.py --video_path data/FSh/c23/videos/ --save_path data/FSh/c23/faces/
 ```
 ```
 data
@@ -90,7 +90,11 @@ data
 
 ### 5. FaceForensics++ (FF++) Dataset:
 ```
-CUDA_VISIBLE_DEVICES=7 python make_data_FF++.py 
+original: CUDA_VISIBLE_DEVICES=7 python make_data_FFpp_FSh.py --video_path data/FF++/original_sequences/youtube/c23/videos/ --save_path data/FF++/original_sequences/youtube/c23/faces/
+Deepfakes: CUDA_VISIBLE_DEVICES=7 python make_data_FFpp_FSh.py --video_path data/FF++/manipulated_sequences/Deepfakes/c23/videos/ --save_path data/FF++/manipulated_sequences/Deepfakes/c23/faces/
+Face2Face: CUDA_VISIBLE_DEVICES=7 python make_data_FFpp_FSh.py --video_path data/FF++/manipulated_sequences/Face2Face/c23/videos/ --save_path data/FF++/manipulated_sequences/Face2Face/c23/faces/
+FaceSwap: CUDA_VISIBLE_DEVICES=7 python make_data_FFpp_FSh.py --video_path data/FF++/manipulated_sequences/FaceSwap/c23/videos/ --save_path data/FF++/manipulated_sequences/FaceSwap/c23/faces/
+NeuralTextures: CUDA_VISIBLE_DEVICES=7 python make_data_FFpp_FSh.py --video_path data/FF++/manipulated_sequences/NeuralTextures/c23/videos/ --save_path data/FF++/manipulated_sequences/NeuralTextures/c23/faces/
 ```
 ```
 data
@@ -101,12 +105,19 @@ data
 │   ├──original_sequences
 │   │   ├──youtube
 │   │   │   ├──c23
+│   │   │   │   ├──videos
+│   │   │   │   │   ├──000.mp4
+│   │   │   │   │   ├──...
 │   │   │   │   ├──faces
 │   │   │   │   │   ├──000
 │   │   │   │   │   │   ├──000.png
 │   │   │   │   │   │   ├──...
 │   ├──manipulated_sequences
 │   │   ├──Deepfakes
+│   │   │   ├──c23
+│   │   │   │   ├──videos
+│   │   │   │   │   ├──000_003.mp4
+│   │   │   │   │   ├──...
 │   │   │   │   ├──faces
 │   │   │   │   │   ├──000_003
 │   │   │   │   │   │   ├──000.png
