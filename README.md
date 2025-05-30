@@ -25,9 +25,9 @@ Follow the links below to download the datasets (🛡️ Copyright of the datase
 
 ### 1. Preprocessing (Optional for video datasets)
 
-1) Extract the frames (e.g., using code in the [FaceForensics++ repo](https://github.com/ondyari/FaceForensics/blob/master/dataset/extract_compressed_videos.py).)
+1) Extract the frames (e.g., using code in the [FaceForensics++ repo](https://github.com/ondyari/FaceForensics/blob/master/dataset/extract_compressed_videos.py))
 
-2) Detect and crop the faces
+2) Detect and crop the faces (see instructions in [preprocessing](https://github.com/MZMMSEC/SJEDD/tree/main/preprocessing))
 
 ## 🚀 Quick Start
 
