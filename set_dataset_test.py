@@ -167,7 +167,7 @@ class BuildFShDataset_online(Dataset):
 
         self.n_frames = n_frames
         self.datapath_manip = os.path.join(datapath, mode, 'faces')
-        self.datapath_real = os.path.join('/data0/mian2/FF++/', 'original_sequences/youtube', 'c23', 'faces')
+        self.datapath_real = os.path.join('data/FF++/', 'original_sequences/youtube', 'c23', 'faces')
         self.transform = preprocess
 
         self.vid_file_path = []
@@ -195,7 +195,7 @@ class BuildFShDataset_online(Dataset):
         self.get_all_vid()
 
     def get_name_candi(self):
-        with open("/data1/mianzou2/dataset-ffpp/test.json", 'r') as fd:
+        with open("data/FF++/test.json", 'r') as fd:
             data = json.load(fd)
             img_lines = []
             fake_lines = []
@@ -277,7 +277,7 @@ class BuildDeeperDataset_online(Dataset):
 
         self.n_frames = n_frames
         self.datapath_manip = os.path.join(datapath, 'faces', mode)
-        self.datapath_real = os.path.join('/data0/mian2/FF++/', 'original_sequences/youtube', 'c23', 'faces')
+        self.datapath_real = os.path.join('data/FF++/', 'original_sequences/youtube', 'c23', 'faces')
         self.transform = preprocess
 
         self.vid_file_path = []
@@ -309,7 +309,7 @@ class BuildDeeperDataset_online(Dataset):
         self.get_all_vid()
 
     def get_name_candi(self):
-        with open("/data1/mianzou2/dataset-ffpp/test.json", 'r') as fd:
+        with open("data/FF++/test.json", 'r') as fd:
             data = json.load(fd)
             img_lines = []
             fake_lines = []
