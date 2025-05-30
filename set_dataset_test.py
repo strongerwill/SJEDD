@@ -79,7 +79,7 @@ class MyDataset_Diffusion(torch.utils.data.Dataset):
 # ------------------------------------------------------------------------------------------------------------------- #
 # for Celeb-DF dataset
 class BuildCelebDFdataset_online(Dataset):
-    def __init__(self, preprocess, datapath = '/data0/mian2/celeb-df/dataset/', n_frames=32):
+    def __init__(self, preprocess, datapath = '/data/CDF/faces/', n_frames=32):
         super().__init__()
 
         self.n_frames = n_frames
@@ -145,7 +145,7 @@ class BuildCelebDFdataset_online(Dataset):
     def __len__(self):
         return len(self.all_data)
 
-def set_dataset_singleGPU_CDF(config, preprocess, datapath='/data0/mian2/celeb-df/dataset/', n_frames=32):
+def set_dataset_singleGPU_CDF(config, preprocess, datapath='/data/CDF/faces/', n_frames=32):
     dataset = BuildCelebDFdataset_online(preprocess,  datapath, n_frames)
     print(f"successfully build CDF test dataset")
 
@@ -162,7 +162,7 @@ def set_dataset_singleGPU_CDF(config, preprocess, datapath='/data0/mian2/celeb-d
 # ------------------------------------------------------------------------------------------------------------------- #
 # for FaceShifter dataset
 class BuildFShDataset_online(Dataset):
-    def __init__(self, preprocess, datapath = '/data0/mian2/FaceShifter/', n_frames=32, mode='c23'):
+    def __init__(self, preprocess, datapath = '/data/FSh', n_frames=32, mode='c23'):
         super().__init__()
 
         self.n_frames = n_frames
@@ -272,7 +272,7 @@ def set_dataset_singleGPU_FSh(config, preprocess, datapath, n_frames, mode='c23'
 # ------------------------------------------------------------------------------------------------------------------- #
 # for DeeperForensics-1.0 dataset
 class BuildDeeperDataset_online(Dataset):
-    def __init__(self, preprocess, datapath='/data0/mian2/DeeperForensics/', n_frames=32, mode='end_to_end'):
+    def __init__(self, preprocess, datapath='/data/DF-1.0/', n_frames=32, mode='end_to_end'):
         super().__init__()
 
         self.n_frames = n_frames
@@ -368,7 +368,7 @@ class BuildDeeperDataset_online(Dataset):
         return len(self.all_data)
 
 
-def set_dataset_singleGPU_Deeper(config, preprocess, datapath='/data0/mian2/DeeperForensics/',
+def set_dataset_singleGPU_Deeper(config, preprocess, datapath='/data/DF-1.0/',
                                  n_frames=32, mode='end_to_end'):
     dataset = BuildDeeperDataset_online(preprocess,  datapath, n_frames, mode)
     print(f"successfully build DeeperForensics-1.0 test dataset")
@@ -390,8 +390,8 @@ def set_dataset_singleGPU_Deeper(config, preprocess, datapath='/data0/mian2/Deep
 # for test on DFDC dataset
 
 def init_dfdc():
-    label = pd.read_csv('/data1/mianzou2/DFDCtest/labels.csv', delimiter=',')
-    folder_list = [f'/data0/mian2/DFDC/faces/{i}' for i in label['filename'].tolist()]
+    label = pd.read_csv('/data/DFDC/labels.csv', delimiter=',')
+    folder_list = [f'/data/DFDC/faces/{i}' for i in label['filename'].tolist()]
     label_list = label['label'].tolist()
 
     return folder_list, label_list
