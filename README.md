@@ -11,7 +11,7 @@ We are working hard on the following items.
 - [ ] Release training codes
 - [x] Release inference codes
 - [x] Release checkpoints 
-- [ ] Release datasets
+- [x] Release datasets
 
 ## 📁 Datasets
 Follow the links below to download the datasets (🛡️ Copyright of the datasets belongs to their original providers, and you may be asked to fill out some forms before downloading):
