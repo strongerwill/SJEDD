@@ -90,6 +90,7 @@ data
 
 ### 5. FaceForensics++ (FF++) Dataset:
 ```
+CUDA_VISIBLE_DEVICES=7 python make_data_FF++.py 
 ```
 ```
 data
