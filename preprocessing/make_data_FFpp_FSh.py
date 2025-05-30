@@ -108,8 +108,9 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
-    p.add_argument('--video_path', type=str, default="/data0/mian2/FaceShifter/c23/videos")
-    p.add_argument('--save_path', type=str, default='/data0/mian2/FaceShifter/c23/faces')
+    p.add_argument('--video_path', type=str)
+    p.add_argument('--save_path', type=str)
     args = p.parse_args()
 
     extract_method_videos(args.video_path, args.save_path)
+
