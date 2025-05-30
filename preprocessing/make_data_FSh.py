@@ -9,7 +9,7 @@ import numpy as np
 from face_utils2 import FaceDetector, norm_crop
 
 config = {
-    'test': r"/home/mianzou2/phd_research/cvpr2022-generalization/SLADD/src/data/FF/config/test.json"
+    'test': "data/FF++/test.json"
 }
 train_mode = 'test'
 with open(config[train_mode], 'r') as fd:
