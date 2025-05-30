@@ -126,3 +126,22 @@ data
 │   │   ├──FaceSwap
 │   │   ├──NeuralTextures
 ```
+
+### 6. DiFF Dataset:
+```
+data
+├── DiFF
+│   ├──DiFFtest.txt
+│   ├──DiFF_real
+│   ├──DCFace
+│   ├──DiffFace
+```
+
+### 7. DiffusionFace Dataset:
+```
+data
+├── DiffusionFace
+│   ├──DiffusionFacetest.txt
+│   ├──Real
+│   ├──DiffSwap
+```
