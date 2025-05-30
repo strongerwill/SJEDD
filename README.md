@@ -20,14 +20,14 @@ Follow the links below to download the datasets (🛡️ Copyright of the datase
 |:-:|:-:|:-:|:-:|
 | [FFSC](https://github.com/MZMMSEC/SO-DFD) | [DiffusionFace (excluding the purely synthesized faces)](https://github.com/Rapisurazurite/DiffFace)| [DiFF (excluding the purely synthesized faces)](https://github.com/xaCheng1996/DiFF) |[DFDC (test set of the full version, not the Preview)](https://ai.meta.com/datasets/dfdc/) |
 
-**Note**: For FF++ and FFSC, please download the full dataset for both training and testing. For the other datasets, if a separate test set is explicitly provided, please download the test set. Otherwise, if no specific split is mentioned, download the full dataset.
+**Note**: For FF++ and FFSC, please download the full dataset for both training and testing. For the other datasets, if a separate test set is explicitly provided, please download the test set. Otherwise, if no specific split is mentioned, download the full dataset. We also provide [download link](https://pan.baidu.com/s/1Otk8pNiGVXeF5o7ZIjO1NA?pwd=t8d5) for Diffusion-based Face Swapping, i.e., DiffusionFace and DiFF, in which the face images have been organized and pre-processed for direct use in testing.
 
+### Preprocessing (see [instructions](https://github.com/MZMMSEC/SJEDD/tree/main/preprocessing))
 
-### 1. Preprocessing (Optional for video datasets)
+1) Extract the frames, and then detect and crop the faces (Optional for video datasets)
 
-1) Extract the frames (e.g., using code in the [FaceForensics++ repo](https://github.com/ondyari/FaceForensics/blob/master/dataset/extract_compressed_videos.py))
+2) Rearrange the data for the test experiments
 
-2) Detect and crop the faces (see instructions in [preprocessing](https://github.com/MZMMSEC/SJEDD/tree/main/preprocessing))
 
 ## 🚀 Quick Start
 
