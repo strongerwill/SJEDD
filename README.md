@@ -4,7 +4,11 @@ This repository contains the official PyTorch implementation of the paper **"[Se
 
 ☀️ If you find this work useful for your research, please kindly star our repo and cite our paper! ☀️
 
-
+- [x] Release [arXiv paper](https://arxiv.org/abs/2405.08487)
+- [x] Release inference codes
+- [x] Release checkpoints 
+- [x] Release datasets
+- [x] Release training codes
 
 ## 📁 Datasets
 Follow the links below to download the datasets (🛡️ Copyright of the datasets belongs to their original providers, and you may be asked to fill out some forms before downloading):
