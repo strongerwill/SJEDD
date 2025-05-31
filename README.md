@@ -45,7 +45,15 @@ After downloading these checkpoints, put them into the folder ``pretrained``.
 CUDA_VISIBLE_DEVICES=5 python SJEDD_test.py --auc --test_log True --dataset [e.g., CDF, FSh, Deeper, DFDC, FFSC] --batch_size 1 --n_frames 64 --resume [path to checkpoints, e.g., ./pretrained/ckpt_best.pth]
 ```
 
-
+### 4. Training (For reference)
+```
+CUDA_VISIBLE_DEVICES=4 python SJEDD_train_FFpp.py --name lr6e-7_lambdaInit_1.0_lambdaLr1e-3_aug0.3_bz32 --aug --aug_probs 0.3 \
+--batch_size 32 --num_epoch 20 --output ./output/train_process/autoL-FFppHalf-SO-unnorm-noAnton \
+--txt_path_train [path to train list txt file] \
+--txt_path_val [path to val list txt file] \
+--weighting_method auto-l --task binary \
+--weight autol --gpu 0 --autol_lr 1e-3 --autol_init 1.0 --initial_lr 6e-7
+```
 
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
