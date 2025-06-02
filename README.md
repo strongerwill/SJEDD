@@ -59,6 +59,9 @@ CUDA_VISIBLE_DEVICES=4 python SJEDD_train_FFpp.py --name lr6e-7_lambdaInit_1.0_l
 --weight autol --gpu 0 --autol_lr 1e-3 --autol_init 1.0 --initial_lr 6e-7
 ```
 
+## 📜 License 
+This project is released for **academic and research purposes only**, and is released under the [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) license.
+
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
 ```
