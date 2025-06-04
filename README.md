@@ -60,7 +60,7 @@ CUDA_VISIBLE_DEVICES=4 python SJEDD_train_FFpp.py --name lr6e-7_lambdaInit_1.0_l
 ```
 
 ## 📜 License 
-This project is released for **academic and research purposes only**, and is released under the [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/) license.
+This project is released for **academic and research purposes only**, and is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
 
 ## Citation
 If you find this repository useful in your research, please consider citing the following paper:
