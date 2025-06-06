@@ -1,4 +1,4 @@
-# [TCSVT'25] Semantics-Oriented Multitask Learning for DeepFake Detection: A Joint Embedding Approach (SJEDD)
+# Semantics-Oriented Multitask Learning for DeepFake Detection: A Joint Embedding Approach (SJEDD)
 
 This repository contains the official PyTorch implementation of the paper **"[Semantics-Oriented Multitask Learning for DeepFake Detection: A Joint Embedding Approach](https://ieeexplore.ieee.org/document/11010889)"** by Mian Zou, Baosheng Yu, Yibing Zhan, Siwei Lyu, and Kede Ma.
 
@@ -57,18 +57,4 @@ CUDA_VISIBLE_DEVICES=4 python SJEDD_train_FFpp.py --name lr6e-7_lambdaInit_1.0_l
 --txt_path_val [path to val list txt file] \
 --weighting_method auto-l --task binary \
 --weight autol --gpu 0 --autol_lr 1e-3 --autol_init 1.0 --initial_lr 6e-7
-```
-
-## 📜 License 
-This project is released for **academic and research purposes only**, and is released under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0).
-
-## Citation
-If you find this repository useful in your research, please consider citing the following paper:
-```
-@article{zou2025sjedd,
-  title={Semantics-oriented multitask learning for DeepFake detection: A joint embedding approach},
-  author={Zou, Mian and Yu, Baosheng and Zhan, Yibing and Lyu, Siwei and Ma, Kede},
-  journal={IEEE Transactions on Circuits and Systems for Video Technology},
-  year={2025}
-}
 ```
